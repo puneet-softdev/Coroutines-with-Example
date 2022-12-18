@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnFirstTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="First Task"
+            app:layout_constraintEnd_toEndOf="@+id/btnUpload"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="@+id/btnUpload"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSecondTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="228dp"
+            android:text="Third Task"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFirstTask" />
+
+        <Button
+            android:id="@+id/btnThirdTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="228dp"
+            android:text="Second Task"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFirstTask" />
+
+        <TextView
+            android:id="@+id/tvFirstTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Task"
+            app:layout_constraintBottom_toTopOf="@+id/btnFirstTask"
+            app:layout_constraintEnd_toEndOf="@+id/btnFirstTask"
+            app:layout_constraintStart_toStartOf="@+id/btnFirstTask"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSecondTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second Task"
+            app:layout_constraintBottom_toTopOf="@+id/btnThirdTask"
+            app:layout_constraintEnd_toEndOf="@+id/btnThirdTask"
+            app:layout_constraintStart_toStartOf="@+id/btnThirdTask"
+            app:layout_constraintTop_toBottomOf="@+id/btnFirstTask" />
+
+        <TextView
+            android:id="@+id/tvThirdTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third Task"
+            app:layout_constraintBottom_toTopOf="@+id/btnSecondTask"
+            app:layout_constraintEnd_toEndOf="@+id/btnSecondTask"
+            app:layout_constraintStart_toStartOf="@+id/btnSecondTask"
+            app:layout_constraintTop_toBottomOf="@+id/btnFirstTask" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Files"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
